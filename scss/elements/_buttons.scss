@@ -1,0 +1,41 @@
+button {
+    font-family: $font;
+    font-weight: 700;
+    font-size:11px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    text-align: center;
+    width: 180px;
+    height: 30px;
+}
+
+button.sprawdz-trening {
+    background-color: $btnSprawdzTreningBackground;
+    border: 1px solid $btnSprawdzTreningBorder;
+    box-shadow: 0 5px 12px 0 $btnSprawdzTreningShadow;
+    border-radius: 48px;
+    color: $btnSprawdzTreningText;
+}
+
+button.sprawdz-trening:hover {
+    border-color: $btnSprawdzTreningBorderHover;
+    background-color: $btnSprawdzTreningBackgroundHover;
+    color: $btnSprawdzTreningTextHover;
+}
+
+
+/* dlaczego cień jest czarny na buttonie żółtym?! */
+button.umow-sie {
+    background-color: $btnUmowSieBackground;
+    box-shadow: 0 10px 12px 0 $btnUmowSieShadow;
+    border-radius: 48px;
+    border-color: $btnUmowSieBorder;
+    color: $btnUmowSieText;
+    border: none;
+}
+button.umow-sie:hover {
+    background-color: $btnUmowSieBackgroundHover;
+    color:$btnUmowSieTextHover;
+}
+
+

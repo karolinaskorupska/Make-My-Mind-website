@@ -1,0 +1,20 @@
+// CDN FONTAWESOME
+// <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+@import url('https://fonts.googleapis.com/css?family=Charmonman');
+// Sass:
+// https://fontawesome.com/how-to-use/on-the-web/using-with/sass
+
+@import "generic/reset";
+
+/*  settings */
+@import "settings/colors";
+@import "settings/fonts";
+
+/* elements */
+@import "elements/base";
+@import "elements/header";
+@import "elements/buttons";
+@import "elements/welcome";
+
+
+

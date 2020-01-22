@@ -1,0 +1,52 @@
+//div .container o kolorze tła białym, biegnie przez 2 pierwsze sekcje, welcome i opinie
+
+.container{
+    background-color: $backgroundColor;
+    width: 1440px;
+    margin: 0 auto;
+
+    /* start of section 1- welcome */
+
+    .welcome {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .img img.grow {
+            width: 397px;
+            height: 388px;
+        }
+        
+        .txt {
+            width: 433px;
+            margin-right: 117px;
+
+            h2 {
+               
+                font-weight: 700;
+                font-size: 39px;
+                color: $h2TextColor;
+                line-height: 45px;
+            }
+            
+            p {
+                
+                font-weight: 400;
+                font-size: 14px;
+                color: $pTextColor;
+                line-height: 25px;
+            }
+            button.umow-sie {
+                margin-top:24px;
+            }
+        }
+        
+
+        
+
+    }   
+
+
+}
