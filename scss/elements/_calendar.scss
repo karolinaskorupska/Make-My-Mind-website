@@ -1,0 +1,51 @@
+
+
+section.calendar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .img-calendar img {
+        width: 539px;
+        height: 525px;
+        margin-top: 39px;
+        margin-right: 94px;
+        margin-bottom: 61px;
+    }
+
+    .txt {
+        width: 422px;
+
+        h2 {
+            text-align: left;
+            margin-bottom: 24px;
+            font-weight: 700;
+            font-size: 39px;
+            color: $h2TextColor;
+            line-height: 45px;
+        }
+        
+        p {
+            margin-bottom: 29px;
+            font-weight: 400;
+            font-size: 14px;
+            color: $pTextColor;
+            line-height: 25px;
+        }
+
+        a {
+            font-family: $font;
+            font-weight: 500;
+            color:#9B9B9B;
+            font-size: 14px;
+            text-decoration: none;
+            margin-left: 36px;
+        }
+        
+        button.umow-sie {
+            width: 241px;
+        }
+    }
+
+}
