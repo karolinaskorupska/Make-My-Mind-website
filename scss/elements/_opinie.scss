@@ -6,6 +6,7 @@ section.opinie {
 
     .container{
         background-color: $backgroundGray;
+
     }
 
     h2 {
@@ -15,6 +16,12 @@ section.opinie {
         font-size: 39px;
         color: $h2TextColor;
         line-height: 45px;
+
+        @media (max-width:320px) {
+            font-size: 20px;
+            line-height: 25px;
+            padding-top: 30px;
+        }
     
     }
 
@@ -33,6 +40,14 @@ section.opinie {
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            @media(max-width: 1024px){
+                width:893px ;
+            }
+            @media(max-width:320px){
+                width: 280px;
+                height: 440px;
+                position: relative;
+            }
 
             ul.slider{
                 list-style: none;
@@ -47,10 +62,29 @@ section.opinie {
                         flex-direction: row;
                         justify-content: space-around;
                         align-items: center;
+                        @media(max-width:1024px){
+                            width: 893px;
+
+                            img {
+                                width: 193px;
+                                height: 143px;
+                                @media(max-width: 320px){
+                                    display: none;
+                                }
+                            }
+                        }
+
 
                         .carousel-txt-container {
-                            width: 569px;
+                            width: 560px;
                             text-align: left;
+                            
+                            @media(max-width:320px){
+                                width: 230px;
+                                
+                            }
+
+                           
 
                             h4{
                                 margin-top: 32px;
@@ -63,6 +97,11 @@ section.opinie {
                                 color: $h4TextColor;
                 
                                 line-height: 45px;
+                                @media(max-width: 320px){
+                                    margin-top: 10px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                }
                             }
                             p{
                                 font-weight: 400;
@@ -77,40 +116,72 @@ section.opinie {
                                     font-size: 14px;
                                     line-height: 25px;
                                     font-weight: 400;
-                                    color: #676767;
+                                    color: $pTextColor;
 
                                     span{
                                         font-weight: 700;
-                                        color:#676767;
+                                        color:$pTextColor;
                                     }
                                 }
                             }
 
                         }
 
-                    }
-
-                    a{
+                        a{
                         
-                        &.carousel-control-prev {
-                            align-self: center;
-                            // margin-right: 45px;
-                        }
-                        
-                        &.carousel-control-next {
-                            align-self: center;
-                            // margin-left: 45px;
-                        }
+                            &.carousel-control-prev{
+                                align-self: center;
 
-                        i{
-                            color:#9B9B9B;
-                            font-size: 28px;
+                                @media(max-width:320px){
+                                    position: absolute;
+                                    bottom: 10px;
+                                    left: 120px;
+                                }
 
-                            &:hover{
-                                color:  #FFB700;
+                                i{
+                                    color:$navUlLiTextColor;
+                                    font-size: 28px;
+    
+                                    @media(max-width:1024px){
+                                        font-size: 16px;
+                                    }
+        
+                                    &:hover{
+                                        color:  $navUlLiTextColorHover;
+                                    }
+                                }
                             }
+                            &.carousel-control-next {
+                                align-self: center;
+
+                                @media(max-width:320px){
+                                    position: absolute;
+                                    bottom: 10px;
+                                    right: 120px;
+                                }
+
+                                i{
+                                    color:$navUlLiTextColor;
+                                    font-size: 28px;
+    
+                                    @media(max-width:1024px){
+                                        font-size: 16px;
+                                    }
+        
+                                    &:hover{
+                                        color:  $navUlLiTextColorHover;
+                                    }
+                                }
+                                
+                            }
+                            
+    
+
                         }
+
                     }
+
+
                 }
 
 

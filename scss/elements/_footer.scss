@@ -3,7 +3,7 @@
 footer{
 
     background-color: $footerBackground;
-    font-family: $font;;
+    font-family: $font;
     font-weight: 400px;
     color: $footerTextColor;
     line-height: 25px;
@@ -11,10 +11,18 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 14px;
+
+
 
     div.footer{
         display: flex;
         flex-direction: row;
+
+        @media(max-width:320px){
+            display: flex;
+            flex-direction: column;
+        }
 
 
         div{
@@ -23,6 +31,12 @@ footer{
         }
             .left {
                 margin-right: 207px;
+                @media(max-width:1024px){
+                    margin-right: 65px;
+                }
+                @media(max-width:320px){
+                    margin-right: 0;
+                }
 
             
                 
@@ -54,6 +68,12 @@ footer{
         .middle {
             margin-right: 123px;
             line-height: 30px;
+            @media(max-width: 1024px){
+                margin-right: 38px;
+            }
+            @media(max-width: 320px){
+                margin-right: 0;
+            }
             
         }
         .right{
@@ -90,6 +110,7 @@ footer{
     text-align: center;
     margin-bottom: 26px;
     margin-top: 69px;
+    font-size: 14px;
 }
 
 }

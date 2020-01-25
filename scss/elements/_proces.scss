@@ -8,11 +8,22 @@
         font-size: 39px;
         color: $h2TextColor;
         line-height: 45px;
+
+        @media(max-width: 320px){
+            font-size: 20px;
+            line-height: 25px;
+            margin-top: 50px;
+        }
     }
     .container-big {
         display: flex;
-        flex-basis: 300px;
+        flex-basis: 280px;
         justify-content: center;
+
+        @media(max-width:320px){
+            display: flex;
+            flex-direction: column;
+        }
     
     .container-small{
 
@@ -21,10 +32,14 @@
         align-items: center;
         margin: 56.5px;
 
+        @media(max-width: 1024px){
+            margin: 10px;
+        }
+
         .numbers{
             font-family: $font;
             font-weight: 700;
-            color: $navUlLiTextColorHover;
+            color: $navUlLiTextColor;
             z-index: 1;
 
             div {
@@ -49,6 +64,10 @@
             width: 280px;
             height: 250px;
             z-index: 0;
+
+            @media(max-width:320px){
+                margin-bottom: 22px;
+            }
 
             h4 {
                 font-family: $font;

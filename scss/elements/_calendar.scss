@@ -6,16 +6,38 @@ section.calendar{
     justify-content: center;
     align-items: center;
 
+    @media(max-width:320px){
+        display: flex;
+        flex-direction: column;
+    }
+
     .img-calendar img {
         width: 539px;
         height: 525px;
         margin-top: 39px;
         margin-right: 94px;
         margin-bottom: 61px;
+        @media(max-width:1024px){
+            width: 417px;
+            height: 406px;
+        }
+        @media(max-width:320px){
+            width: 241px;
+            height: 235px;
+            margin-top: 10px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
     }
 
     .txt {
         width: 422px;
+        @media(max-width:320px){
+            width: 259px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
         h2 {
             text-align: left;
@@ -24,6 +46,12 @@ section.calendar{
             font-size: 39px;
             color: $h2TextColor;
             line-height: 45px;
+
+            @media(max-width: 320px){
+                font-size: 20px;
+                line-height: 25px;
+                text-align: center;
+            }
         }
         
         p {
@@ -32,19 +60,32 @@ section.calendar{
             font-size: 14px;
             color: $pTextColor;
             line-height: 25px;
+
+            @media(max-width:320px){
+                width: 259px;
+                text-align: center;
+            }
         }
 
         a {
             font-family: $font;
             font-weight: 500;
-            color:#9B9B9B;
+            color:$navUlLiTextColor;
             font-size: 14px;
             text-decoration: none;
             margin-left: 36px;
+
+            @media(max-width: 320px){
+                text-align: center;
+                margin-left: 0;
+                margin-top: 20px;
+                margin-bottom: 60px;
+            }
         }
         
         button.umow-sie {
             width: 241px;
+
         }
     }
 
