@@ -1,0 +1,175 @@
+
+ main .trainers{
+    margin-top:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+    @media(max-width:320px){
+        margin-top: 35px;
+    }
+    
+    
+
+    .person {
+        display: flex;
+        flex-direction: column;
+
+
+        @media(max-width:320px){
+           margin-bottom: 80px;
+        }
+
+
+
+        .introduce {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .image  {
+    
+                width:102px;
+                height:102px;
+                box-shadow: 0 12px 14px 0 rgba(201,201,201,0.50);
+                position:relative;
+                z-index: 1;
+                border:none;
+                border-radius:50%;
+
+                @media (max-width:320px){
+                    left: -10%;
+                }
+                
+            }
+
+            .name {
+                box-sizing: border-box;
+                height:71px;
+                width:514px;
+                box-shadow: 0 5px 12px 0 $btnSprawdzTreningBorder;
+                border-radius: 6px;
+                font-family: $font;
+                font-weight: 800;
+                font-size: 39px;
+                color: $h4TextColor;
+                letter-spacing: 0;
+                line-height: 45px;
+                padding-top: 13px;
+                padding-bottom:13px;
+                position: absolute;
+                z-index: 0;
+                left:24%;
+                padding-left: 80px;
+
+                    
+                @media (max-width:1024px){
+                    left: 16.5%;
+                }
+                @media(max-width:320px){
+                    width: 280px;
+                    font-size: 20px;
+                    line-height: 25px;
+                    padding-top: 10px;
+                    padding-bottom:11px;
+                    padding-left: 125px;
+                    padding-right: 71px;
+                    left: 5%;
+
+
+                }
+
+                    br{
+                        display: none;
+                        @media(max-width:320px){
+                            display: block;
+                        }
+                    }
+            }
+            .aneta {
+                background-image: url("../assets/photo_aneta.png");
+                background-size: cover ;
+                
+            }
+            .kinga {
+                background-image: url("../assets/photo_kinga.png");
+                background-size: cover ;
+            }
+            .michal {
+                background-image: url("../assets/photo_michal.png");
+                background-size: cover ;
+            }
+            
+        }
+
+        .description {
+            
+            width: 1013px;
+            height: 348px;
+            font-family: $font;
+            font-weight: 400;
+            font-size:14px;
+            color: $pTextColor;
+            line-height: 25px;
+            margin-top: 22px;
+            margin-bottom: 42px;
+
+            @media(max-width:1024px){
+                width: 771px;
+                height: 479px;
+                margin-bottom: 16px;
+            }
+            @media (max-width:320px){
+                width: 240px;
+                height: auto;
+                margin-bottom: 0;
+                position: relative;
+
+                p#hiddenIn320px{
+                    display: none;
+                }
+
+                button.rozwin {
+                    display: inline-block;
+                    position:absolute;
+                    left:10%
+                    
+                }
+
+               
+                
+            }
+        
+            p{
+                margin-bottom: 35px;
+            }
+            .rozwin{
+                display: none;
+            }
+
+        }
+    } 
+
+    h2{
+        font-family:$font;
+        font-weight: 800;
+        
+        font-size: 39px;
+        color: $trainerTextMore;
+        letter-spacing: 0;
+        line-height: 45px;
+        margin-bottom: 81px;
+        @media(max-width:1024px){
+            margin-bottom: 74px;
+        }
+        @media(max-width: 320px){
+            width: 220px;
+            font-size: 20px;
+            line-height: 25px;
+            text-align: center;
+        }
+    }
+
+
+}
