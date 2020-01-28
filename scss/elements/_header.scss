@@ -7,7 +7,7 @@
         justify-content: space-evenly;
         align-items: center;
         width: 100%;
-        height:100px ;
+        height:100px;
         margin-top: 26px;
         @media(max-width:1024px){
             display: flex;
@@ -24,6 +24,9 @@
                 width: 96px;
                 height: 26px;
                 }
+        }
+        button.cross {
+            display: none;
         }
 
         nav ul li {
@@ -47,7 +50,7 @@
                 color: $navUlLiTextColor;
             }
             a:hover {
-                color: #FFB700;
+                color: $btnUmowSieBackgroundHover;
             }
         }
 
