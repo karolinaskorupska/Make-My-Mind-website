@@ -37,6 +37,7 @@
                 color: $hamburgermenu;
                 position: relative;
                 margin-top: -18px;
+                cursor: pointer;
 
                 span{
                     display: block;
@@ -56,28 +57,63 @@
         }
         
 
-        nav.hamburger-menu-on ul li {
+        nav{
+            margin-top: 37px;
+             ul li {
 
-            @media(max-width:1024px){
                 display: flex;
-            }
-            @media(max-width:320px){
-                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                
+    
+                a{
+                    margin-top: 20px;
+                    color: #3A3939;;
+                }
+                
+    
+                @media(max-width:1024px){
+                    margin-left: 100px;
+                }
+                @media(max-width:320px){
+                    margin-left: 70px;
+                }
+    
+                
             }
         }
 
         
 
         div.sidenav {
-            display: none;
+            display: flex;
+            flex-direction: column;
+            margin-top: 25px;
 
+            @media(max-width:1024px){
+                margin-left: 90px;
+            }
             @media(max-width:320px){
-            display: none;
+                margin-left: 60px;
             }
-            button.sprawdz-trening {
-            margin-right: 21px;
-            margin-top: 10px;
+            button.umow-sie{
+                margin-top: 15px;
+                margin-bottom: 25px;
             }
+            .hamburger-menu-icons{
+                display: flex;
+                
+                a {
+                    width: 22px;
+                    height: 22px;
+                    margin: 0 7px;
+
+                }
+
+            }
+
+
         }   
         button.hamburger {
             display: none;
