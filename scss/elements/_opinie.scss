@@ -6,6 +6,7 @@ section.opinie {
 
     .container{
         background-color: $backgroundGray;
+        height: 543px;
 
     }
 
@@ -16,6 +17,9 @@ section.opinie {
         font-size: 39px;
         color: $h2TextColor;
         line-height: 45px;
+        @media(max-width:800px){
+            font-size: 28px;
+        }
 
         @media (max-width:320px) {
             font-size: 20px;
@@ -43,6 +47,16 @@ section.opinie {
             @media(max-width: 1024px){
                 width:893px ;
             }
+
+            @media(max-width:800px){
+                width: 750px;
+            }
+            @media(max-width:600px) {
+                width: 550px;
+            }
+            @media(max-width:400px){
+                width: 350px;
+            }
             @media(max-width:320px){
                 width: 280px;
                 height: 440px;
@@ -68,16 +82,38 @@ section.opinie {
                             img {
                                 width: 193px;
                                 height: 143px;
+                                @media(max-width:400px){
+                                    display: none;
+                                }
                                 @media(max-width: 320px){
                                     display: none;
                                 }
                             }
                         }
+                        @media(max-width:800px){
+                            width: 710px;
+                        }
+                        @media(max-width:600px) {
+                            width: 550px;
 
+                            img{
+                                display: none;
+                            }
+                        }
+                        @media(max-width:400px){
+                            width: 350px;
+                        }
 
                         .carousel-txt-container {
                             width: 560px;
                             text-align: left;
+
+                            @media(max-width:800px){
+                                width: 400px;
+                            }
+                            @media(max-width:400px){
+                                width: 300px;
+                            }
                             
                             @media(max-width:320px){
                                 width: 230px;
@@ -97,6 +133,11 @@ section.opinie {
                                 color: $h4TextColor;
                 
                                 line-height: 45px;
+                                @media(max-width:400px){
+                                    margin-top: 10px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                }
                                 @media(max-width: 320px){
                                     margin-top: 10px;
                                     line-height: 30px;
@@ -111,12 +152,18 @@ section.opinie {
                                 margin-top: 20px;
                                 margin-bottom: 20px;
 
+                                
+                                @media(max-width:400px){
+                                    text-align: center;
+                                }
+
                                 &.person{
                                     font-family: $font;
                                     font-size: 14px;
                                     line-height: 25px;
                                     font-weight: 400;
                                     color: $pTextColor;
+
 
                                     span{
                                         font-weight: 700;
@@ -131,7 +178,8 @@ section.opinie {
                         
                             &.carousel-control-prev{
                                 align-self: center;
-
+                                
+                                
                                 @media(max-width:320px){
                                     position: absolute;
                                     bottom: 10px;

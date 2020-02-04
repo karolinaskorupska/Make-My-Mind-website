@@ -1,7 +1,7 @@
 
 
 footer{
-
+    
     background-color: $footerBackground;
     font-family: $font;
     font-weight: 400px;
@@ -12,6 +12,7 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 14px;
+    width: 100vw;
 
 
 
@@ -19,6 +20,10 @@ footer{
         display: flex;
         flex-direction: row;
 
+        @media(max-width:600px){
+            display: flex;
+            flex-direction: column;
+        }
         @media(max-width:320px){
             display: flex;
             flex-direction: column;
@@ -28,11 +33,21 @@ footer{
         div{
             width: 261px;
             margin-top: 54px;
+
+            @media(max-width: 800px){
+                width: 220px;
+            }
+            @media(max-width:600px){
+                width: 261px;
+            }
         }
             .left {
                 margin-right: 207px;
                 @media(max-width:1024px){
                     margin-right: 65px;
+                }
+                @media(max-width:800px){
+                    margin-right: 20px;
                 }
                 @media(max-width:320px){
                     margin-right: 0;

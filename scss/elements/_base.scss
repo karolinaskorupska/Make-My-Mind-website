@@ -2,15 +2,25 @@
 body{
     background-color: $backgroundColor;
     font-family: $font;
+    width: 100vw;
     
 
-    .container{
+    .container, footer{
         width: 1440px;
         margin: 0 auto;
         padding: 0;
         box-sizing: border-box;
         @media(max-width: 1024px) {
             width: 1024px;
+        }
+        @media(max-width:800px){
+            width: 800px;
+        }
+        @media(max-width:600px){
+            width: 600px;
+        }
+        @media(max-width:400px){
+            width: 400px;
         }
         @media(max-width:320px) {
             width: 320px;
