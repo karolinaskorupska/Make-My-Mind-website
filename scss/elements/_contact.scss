@@ -1,0 +1,187 @@
+//div .container o kolorze tła białym, biegnie przez 2 pierwsze sekcje, welcome i opinie
+
+
+main{
+
+    height: 600px;
+    .contact {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 1440px;
+        @media(max-width: 1024px){
+            width: 1024px;
+        }
+        @media(max-width:800px){
+            width: 800px;
+            margin-top: 50px;
+        }
+        @media(max-width:600px){
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 10px;
+            width: 600px;
+        }
+        @media(max-width:400px){
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 10px;
+            width: 400px;
+        }
+        @media(max-width:320px){
+            display: flex;
+            flex-direction: column-reverse;
+            margin-top: 10px;
+            width: 320px;
+        }
+
+        .img img.grow {
+            width: 397px;
+            height: 388px;
+
+            @media(max-width:800px){
+                width: 300px;
+                
+            }
+
+            @media(max-width: 320px){
+                width: 149px;
+                height: 146px;
+            }
+        }
+        
+        .txt {
+            box-sizing: border-box;
+            width: 433px;
+            margin-right:200px;
+
+            @media(max-width:800px){
+                width: 300px;
+                margin-right: 50px;
+                
+            }
+
+            @media(max-width:320px){
+                width: 277px;
+                margin: 15px auto;
+                text-align: center;
+                
+            }
+
+            h2 {
+               
+                font-weight: 700;
+                font-size: 39px;
+                color: $h2TextColor;
+                line-height: 45px;
+                margin-bottom: 23px;
+
+                @media(max-width:800px){
+                    font-size: 28px;
+                    line-height: 25px;
+                }
+                @media(max-width: 320px){
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+            }
+            
+            form{
+                width: 530px;
+                height: 170px;
+                display: block;
+
+                .personal-data{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    label{
+                        margin-left: 10px;
+                    }
+
+                    label, input{
+                        display: block;
+                        font-size: 14px;
+                        color: $pTextColor;
+                        line-height: 25px;
+                        margin-bottom: 10px;
+                    }
+                    input{
+                        box-sizing: border-box;
+                        border: 1px solid $borderColor;
+                        box-shadow: 0 5px 12px 0 rgba(226,226,226,0.50);
+                        border-radius: 17.5px;
+                        font-size: 14px;
+                        color: $navUlLiTextColor;
+                        padding: 2px 15px;
+                    }
+                    input:focus{
+                        border: 1px solid $navUlLiTextColorHover;
+                    }
+                    
+
+                    .name{
+                    
+                        input{
+                            width: 230px;
+                            height: 30px;
+                        }
+                    }
+                    .email{
+                        input{
+                            width:270px;
+                            height: 30px;
+                        }
+                    }
+                    display: flex;
+                    flex-direction: row;
+                }
+
+                .textarea{
+
+                    textarea{
+                        resize: none;
+                    
+                        border: 1px solid $borderColor;
+                        box-shadow: 0 5px 12px 0 rgba(226,226,226,0.50);
+                        border-radius: 17.5px;
+                        overflow: auto;
+                        color: $navUlLiTextColor;
+                        font-size: 14px;
+                        color: $navUlLiTextColor;
+                        padding: 5px 15px;
+                        font-family: $font;
+                        
+                    }
+                    textarea:focus{
+                        box-shadow: 0 5px 12px 0 $navUlLiTextColorHover;
+                    }
+                    label{
+                        display: block;
+                        margin-left: 10px;
+                        font-size: 14px;
+                        color: $pTextColor;
+                        line-height: 25px;
+                        margin-bottom: 10px;
+                    }
+                    
+                    
+                    
+                }
+            
+            }
+            
+            button.wyslij-wiadomosc {
+                margin-top:170px;
+            }
+        }
+        
+
+    }   
+
+}
