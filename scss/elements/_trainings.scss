@@ -1,7 +1,10 @@
 
 
 main .trainings {
-
+    display: flex;
+    flex-direction: column;
+    
+    
     
     h2 {
         font-family: $font;
@@ -12,6 +15,14 @@ main .trainings {
         margin-top: 100px;
         margin-bottom: 70px;
         font-weight: 800;
+
+        @media(max-width:600px){
+            font-size:20px;
+            line-height: 25px;
+            width: 257px;
+            align-self: center;
+            
+        }
     }
 
     .big-box {
@@ -19,17 +30,27 @@ main .trainings {
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        margin-bottom: 100px;
+
+        @media(max-width:600px){
+            flex-direction: column;
+        }
 
 
         .small-box{
             display: flex;
             flex-direction: column;
             width: 280px;
+            @media(max-width:600px){
+                margin-bottom:45px ;
+            }
+            
             
             .photo-box{
                 height: 157px;
-                background-image: url("../../assets/_DSC0166.png");
+                background-image: url("../assets/DSC0166.png");
                 background-color: gray;
+                background-size: cover;
             }
             .text-box{
                 height: 380px;
@@ -37,12 +58,15 @@ main .trainings {
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: center;
-                padding-left: 23px;
+                
+                box-shadow:0 5px 12px 0 $borderColor; 
+                border-radius: 6px;
 
                 h4{
                     font-size: 20px;
                     color: $h4TextColor;
                     line-height: 45px;
+                    padding-left: 23px;
                 }
                 span{
                     color: $trainingsTextPrice;
@@ -50,19 +74,57 @@ main .trainings {
                     border-bottom: 3px solid $spanBorderBottom;
                     padding: 7px 0;
                     width:140px ;
+                    padding-left: 23px;
                 }
 
                 .p-box{
                     font-size: 14px;
                     line-height: 25px;
                     color: $pTextColor;
-                    padding:10px 10px;
+                    padding:10px 5px;
+                    padding-left: 23px;
                 }
+                .icon-box{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    padding-left: 0;
+                    font-size:12px;
+                    color: $pTextColor;
+                    line-height: 15px;
+                    
+                }
+                .watch, .location{
+                    
+                    height: 55px;
+                    display:flex;
+                    flex-direction: row;
+                    margin:5px 10px;
+                    align-items: center;
+
+                    img{
+                        margin-right: 5px;
+                    }
+                    .txt{
+                        
+                        width:94px;
+                    }
+                }
+
+                button.zapisz-sie{
+                   margin-left: 37px; 
+                }
+                
             }
 
 
             a{
                 display: block;
+                margin:11px 78px;
+                text-align: center;
+                text-decoration: none;
+                color: $navUlLiTextColor;
+                font-size: 14px;
             }
         }
     }

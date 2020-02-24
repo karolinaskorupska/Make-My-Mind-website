@@ -47,4 +47,22 @@ button.rozwin{
     border-radius: 17.5px;
 }
 
+/* w trainings button Zapisz sie */
+
+button.zapisz-sie{
+    width:206px;
+    height: 30px;
+    color: $buttonZapiszSieTxtColor;
+    background-color: $buttonZapiszSieBackgroundColor;
+    box-shadow: 0 10px 12px 0 $buttonZapiszSieShadowColor;
+    font-size: 11px;
+    text-align:center;
+    font-weight: 800;
+    border-radius: 17.5px;
+    border:none;
+}
+
+
+
+
 
