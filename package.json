@@ -10,7 +10,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "jshint": "^2.10.3",
-    "node-sass": "^4.13.0"
+    "node-sass": "^7.0.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
